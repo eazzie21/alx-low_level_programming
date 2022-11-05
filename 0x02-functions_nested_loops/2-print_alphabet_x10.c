@@ -1,24 +1,19 @@
 #include "main.h"
-
 /**
- * print_alphabet_x10 - prints 10 times the alphabet, followed by a new line.
- */
+*print_alphabet_x10 - prints alphabet letters
+* ten times
+*desc: The function uses loop to operate
+*Return: no return
+*/
 void print_alphabet_x10(void)
 {
-	char alph2;
-	int myNum;
+int counter = 0;
+int letter;
+while (counter++ <= 9)
+{
+for (letter = 'a'; letter <= 'z'; letter++)
+_putchar(letter);
 
-	myNum = 0;
-	while (myNum < 10)
-	{
-		alph2 = 'a';
-
-		while (alph2 <= 'z')
-		{
-			_putchar(alph2);
-			alph2++;
-		}
-		_putchar('\n');
-		myNum++;
-	}
+_putchar(10);
+}
 }
